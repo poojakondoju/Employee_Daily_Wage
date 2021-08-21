@@ -1,23 +1,19 @@
 package com.employeewage;
 
 public class EmployeeDaiywage {
-		public class EmployeeWageComputation
-		{
-		    public static void main(String args[])
-		    {
-		        final int FULL_TIME = 1;
-		        int empType = (int) (Math.random() * 100) % 2;
-		        if (empType == FULL_TIME)
-		        {
-		            System.out.println("Employee is Present");
-
-		        } else
-		        {
-		            System.out.println("Employee is   Absent");
-
-		        }
-		    }
-		}
-
-
+	public static void main(String[] args) {
+		int IS_FULL_TIME = 1;
+		int EMP_RATE_PER_HOUR = 20;
+		int empHrs = 0;
+		int empWage = 0;
+		double empcheck = Math .floor(Math.random() * 10) % 2;
+		if (empcheck == IS_FULL_TIME)
+			empHrs = 8;
+		else
+			empHrs = 0;
+		empWage = empHrs * EMP_RATE_PER_HOUR;
+			System.out.println("Emp Wage: " + empWage);
+	
 	}
+
+}
